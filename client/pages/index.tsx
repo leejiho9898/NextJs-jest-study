@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
+import Head from "next/head";
+import Seo from "components/Seo";
 
 const Home = () => {
-    return "hi"
-}
+  return (
+    <>
+      <Seo title="Home" />
+    </>
+  );
+};
 
-export default Home
+export default Home;
