@@ -6,11 +6,13 @@ const usePopular = () => {
   useEffect(() => {
     const getData = async () => {
       const data = await getPopular();
-      setMovies(data);
+      setMovies(data.results);
+      console.log(data);
     };
+
     getData();
   }, []);
-  return { movies };
+  return { movies, setMovies };
 };
 
 export default usePopular;
